@@ -1,0 +1,14 @@
+{
+  "name": "paleo",
+  "version": "1.0.0",
+  "main": "main.js",
+  "author": "Stephen Belanger <admin@stephenbelanger.com>",
+  "license": "MIT",
+  "dependencies": {
+    "electron": "^1.6.2"
+  },
+  "devDependencies": {
+    "electron-packager": "^8.6.0",
+    "electron-prebuilt": "^1.4.13"
+  }
+}

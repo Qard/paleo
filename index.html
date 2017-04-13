@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Mastodon</title>
+    <link rel="stylesheet" href="index.css">
+    <script charset="utf-8" type="text/javascript">
+      window.onload = () => {
+        function goTo(host) {
+          if (remember.checked) {
+            localStorage.setItem('mastodon-host', host)
+          }
+          fetch(`http://localhost:8291/${host}`)
+        }
+
+        const form = document.querySelector('form')
+        const input = document.querySelector('input[type="text"]')
+        const remember = document.querySelector('input[type="checkbox"]')
+
+        const host = localStorage.getItem('mastodon-host')
+        if (host) input.value = host
+
+        form.addEventListener('submit', event => {
+          event.preventDefault()
+          goTo(input.value)
+          return false
+        })
+      }
+    </script>
+  </head>
+  <body>
+    <form>
+      <div class="host">
+        <input type="text" placeholder="Mastodon Server Host" />
+      </div>
+      <div class="remember">
+        <input type="checkbox" placeholder="Remember server" />
+      </div>
+      <input type="submit" value="Connect" />
+    </form>
+  </body>
+</html>

@@ -1,0 +1,65 @@
+* {
+  font-family: "Helvetica";
+  box-sizing: border-box;
+}
+body {
+  background: #555;
+}
+form {
+  display: flex;
+  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
+}
+.host {
+  background: linear-gradient(to bottom, #bbb 0%, #ddd 100%);
+  border-radius: 5px;
+  border: solid 1px grey;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  padding: 3px;
+  padding-top: 2px;
+  padding-right: 0;
+  flex: 1;
+}
+input {
+  border: none;
+  font-size: 1em;
+  padding: 8px;
+}
+.host,
+input[type="submit"],
+.remember {
+  border: solid 1px rgba(255, 255, 255, 0.1);
+}
+
+/* Text input */
+.host {
+  border-radius: 5px 0 0 5px;
+  display: flex;
+  flex: 1;
+}
+input[type="text"] {
+  flex: 1;
+  border-top: solid 2px rgba(0,0,0,0.3);
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  margin-right: 3px;
+}
+
+/* Checkbox */
+.remember {
+  background: linear-gradient(to bottom, #666 0%, #888 100%);
+  padding: 10px;
+  display: flex;
+  border-width: 1px 0;
+}
+
+/* Connect button */
+input[type="submit"] {
+  background: linear-gradient(to bottom, #779 0%, #99b 100%);
+  text-shadow: 1px 1px 1px rgba(0,0,0,0.3);
+  font-weight: 100;
+  text-size: 1em;
+  color: white;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
