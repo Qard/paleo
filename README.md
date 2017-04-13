@@ -1,5 +1,7 @@
 # paleo
 
+![paleo](screenshot.png "paleo")
+
 This is a wrapper to host the [mastodon.social](https://mastodon.social) web
 app within an electron-based tray icon app. It doesn't support notifications,
 it doesn't support anything the regular web app doesn't. It's just the web app
