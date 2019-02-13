@@ -5,10 +5,10 @@
   "author": "Stephen Belanger <admin@stephenbelanger.com>",
   "license": "MIT",
   "dependencies": {
-    "electron": "^1.6.2"
+    "electron": "^4.0.4"
   },
   "devDependencies": {
-    "electron-packager": "^8.6.0",
+    "electron-packager": "^13.0.1",
     "electron-prebuilt": "^1.4.13"
   }
 }
