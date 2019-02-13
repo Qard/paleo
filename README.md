@@ -1,5 +1,7 @@
 # paleo
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/Qard/paleo.svg)](https://greenkeeper.io/)
+
 ![paleo](screenshot.png "paleo")
 
 This is a wrapper to host the [mastodon.social](https://mastodon.social) web
